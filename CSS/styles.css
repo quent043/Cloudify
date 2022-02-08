@@ -482,3 +482,59 @@ a {
         font-size: 1.6rem;
     }
 }
+
+/* Grids */
+
+.grid {
+    display: grid;
+}
+
+@media screen and (min-width: 768px) {
+    .grid--1x2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid--1x3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* Testimonials */
+
+.testimonial {
+    padding: 3rem;
+}
+
+.testimonial .quote {
+    margin: 2rem 0;
+    font-size: 110%;
+}
+
+.testimonial__image {
+    position: relative;
+    margin: 0 3rem;
+}
+
+.testimonial__image > img {
+    width: 100%;
+}
+
+.testimonial__image>.icon-container {
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial__image {
+        margin: 0;
+    }
+    .testimonial .quote {
+        margin: 5rem 0 0 6rem;
+        font-size: 120%;
+        line-height: 1.5;
+    }
+}
