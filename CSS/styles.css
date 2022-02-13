@@ -585,8 +585,9 @@ a {
         text-align: left;
     }
 
+/*Not really necessary any more*/
     .callout .btn {
-    / / Not really necessary any more justify-self: start;
+    justify-self: start;
         margin: 0 2rem;
     }
 }
